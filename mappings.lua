@@ -52,6 +52,11 @@ local mappings = {
       function() require("syntax-tree-surfer").move("n", true) end,
       desc = "Swap previous tree-sitter object",
     },
+    ["<F3>"] = { function() require("dap").toggle_breakpoint() end, desc = "Toggle Breakpoint" },
+    ["<F5>"] = { function() require("dap").continue() end, desc = "Continue" },
+    ["<F8>"] = { function() require("dap").step_into() end, desc = "step_into" },
+    ["<F9>"] = { function() require("dap").step_over() end, desc = "step_over" },
+    ["<F10>"] = { function() require("dap").step_out() end, desc = "step_out" },
   },
   i = {
     -- type template string
