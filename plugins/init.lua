@@ -15,11 +15,7 @@ return {
     cmd = "Neogen",
     config = function() require "user.plugins.neogen" end,
   },
-  ["EdenEast/nightfox.nvim"] = {
-    module = "nightfox",
-    event = "ColorScheme",
-    config = function() require "user.plugins.nightfox" end,
-  },
+  ["EdenEast/nightfox.nvim"] = { module = "nightfox", config = function() require "user.plugins.nightfox" end },
   ["ethanholz/nvim-lastplace"] = {
     opt = true,
     setup = function() table.insert(astronvim.file_plugins, "nvim-lastplace") end,
