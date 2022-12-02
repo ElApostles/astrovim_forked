@@ -1,11 +1,6 @@
 return {
   ensure_installed = {
-    "shellcheck",
     "stylua",
-    "black",
-    "isort",
-    "prettierd",
-    "shfmt",
-    "shellcheck",
+	"clang-format",
   },
 }
