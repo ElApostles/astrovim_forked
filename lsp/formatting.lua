@@ -1,6 +1,6 @@
 return {
   format_on_save = {
-    c = false,
+    false,
   },
   disabled = { "sumneko_lua" },
 }
