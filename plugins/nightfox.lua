@@ -1,7 +1,16 @@
+-- asdf
 require("nightfox").setup {
   options = {
     dim_inactive = true,
-    styles = { comments = "italic" },
+    styles = {
+      comments = "italic",
+      keywords = "italic",
+      types = "italic, bold",
+      conditionals = "bold",
+      constants = "bold",
+      numbers = "italic",
+      strings = "italic, bold",
+    },
     module_default = false,
     modules = {
       aerial = true,
