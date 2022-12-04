@@ -1,14 +1,9 @@
 return {
+  { "42Paris/42header" },
   ["goolord/alpha-nvim"] = { disable = true },
   ["max397574/better-escape.nvim"] = { disable = true },
 
   ["andymass/vim-matchup"] = { after = "nvim-treesitter" },
-  ["arsham/indent-tools.nvim"] = {
-    opt = true,
-    setup = function() table.insert(astronvim.file_plugins, "indent-tools.nvim") end,
-    requires = { "arsham/arshlib.nvim", module = "arshlib" },
-    config = function() require "user.plugins.indent-tools" end,
-  },
   ["danymat/neogen"] = {
     requires = "nvim-treesitter/nvim-treesitter",
     module = "neogen",

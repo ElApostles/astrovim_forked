@@ -22,33 +22,25 @@ local mappings = {
     -- navigating wrapped lines
     j = { "gj", desc = "Navigate down" },
     k = { "gk", desc = "Navigate down" },
-    -- easy splits
-    ["\\"] = { "<cmd>split<cr>", desc = "Horizontal split" },
-    ["|"] = { "<cmd>vsplit<cr>", desc = "Vertical split" },
-    -- better increment/decrement
-    ["-"] = { "<c-x>", desc = "Descrement number" },
-    ["+"] = { "<c-a>", desc = "Increment number" },
     -- resize with arrows
     ["<Up>"] = { function() require("smart-splits").resize_up(2) end, desc = "Resize split up" },
     ["<Down>"] = { function() require("smart-splits").resize_down(2) end, desc = "Resize split down" },
     ["<Left>"] = { function() require("smart-splits").resize_left(2) end, desc = "Resize split left" },
     ["<Right>"] = { function() require("smart-splits").resize_right(2) end, desc = "Resize split right" },
-    -- Easy-Align
-    ga = { "<Plug>(EasyAlign)", desc = "Easy Align" },
     -- Treesitter Surfer
-    ["<C-down>"] = {
+    ["<C-Shift-j>"] = {
       function() require("syntax-tree-surfer").move("n", false) end,
       desc = "Swap next tree-sitter object",
     },
-    ["<C-right>"] = {
+    ["<C-Shift-l>"] = {
       function() require("syntax-tree-surfer").move("n", false) end,
       desc = "Swap next tree-sitter object",
     },
-    ["<C-up>"] = {
+    ["<C-Shift-k>"] = {
       function() require("syntax-tree-surfer").move("n", true) end,
       desc = "Swap previous tree-sitter object",
     },
-    ["<C-left>"] = {
+    ["<C-Shift-h>"] = {
       function() require("syntax-tree-surfer").move("n", true) end,
       desc = "Swap previous tree-sitter object",
     },
@@ -60,8 +52,7 @@ local mappings = {
   },
   i = {
     -- type template string
-    ["<C-CR>"] = { "<++>", desc = "Insert template string" },
-    ["<S-Tab>"] = { "<C-V><Tab>", desc = "Tab character" },
+		["<C-l>"] = { "<C-V><Tab>", desc = "Insert Tab" },
   },
   v = {
     -- navigating wrapped lines

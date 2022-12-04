@@ -1,7 +1,7 @@
 return {
   auto_install = vim.fn.executable "tree-sitter" == 1,
   highlight = { disable = { "help" } },
-  indent = { enable = true, disable = { "python" } },
+  indent = { enable = false, disable = { "python" } },
   matchup = { enable = true },
   textobjects = {
     select = {
