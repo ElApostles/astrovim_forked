@@ -3,6 +3,8 @@ local utils = require "user.utils"
 return {
   n = {
     ["<leader>"] = {
+      w = { "<cmd>wa<cr>", "Save all buffers" },
+      q = { "<cmd>qa<cr>", "Quit all buffers" },
       b = { "<cmd>read !getbib -c<cr>", "Get Bib" },
       r = { "<cmd>SendHere<cr>", "Set REPL" },
       N = { "<cmd>tabnew<cr>", "New Buffer" },
