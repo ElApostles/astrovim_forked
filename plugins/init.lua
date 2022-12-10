@@ -18,10 +18,6 @@ return {
   },
   ["hrsh7th/cmp-calc"] = { after = "nvim-cmp", config = function() require "user.plugins.cmp-calc" end },
   ["hrsh7th/cmp-emoji"] = { after = "nvim-cmp", config = function() require "user.plugins.cmp-emoji" end },
-  ["jayp0521/mason-nvim-dap.nvim"] = {
-    after = { "mason.nvim", "nvim-dap" },
-    config = function() require "user.plugins.mason-nvim-dap" end,
-  },
   ["jc-doyle/cmp-pandoc-references"] = {
     after = "nvim-cmp",
     config = function() require "user.plugins.cmp-pandoc-references" end,
@@ -42,7 +38,6 @@ return {
     opt = true,
     setup = function() table.insert(astronvim.file_plugins, "vim-sandwich") end,
   },
-  ["mfussenegger/nvim-dap"] = { opt = true, setup = function() table.insert(astronvim.file_plugins, "nvim-dap") end },
   ["mxsdev/nvim-dap-vscode-js"] = {
     after = "mason-nvim-dap.nvim",
     config = function() require "user.plugins.nvim-dap-vscode-js" end,
@@ -73,7 +68,10 @@ return {
     after = "mason-lspconfig.nvim",
     config = function() require "user.plugins.clangd_extensions" end,
   },
-  ["rcarriga/nvim-dap-ui"] = { after = "nvim-dap", config = function() require "user.plugins.dapui" end },
+  ["lvimuser/lsp-inlayhints.nvim"] = {
+    module = "lsp-inlayhints",
+    config = function() require "user.plugins.lsp-inlayhints" end,
+  },
   ["sindrets/diffview.nvim"] = {
     opt = true,
     setup = function() table.insert(astronvim.git_plugins, "diffview.nvim") end,

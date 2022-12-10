@@ -3,4 +3,3 @@ require("mason-nvim-dap").setup {
   automatic_setup = true,
   ensure_installed = { "c", "cpp", "bash" },
 }
-require("mason-nvim-dap").setup_handlers {}
