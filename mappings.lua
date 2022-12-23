@@ -49,10 +49,11 @@ local mappings = {
     ["<F8>"] = { function() require("dap").step_into() end, desc = "step_into" },
     ["<F9>"] = { function() require("dap").step_over() end, desc = "step_over" },
     ["<F10>"] = { function() require("dap").step_out() end, desc = "step_out" },
+    ["|"] = { ":vs<CR>" },
   },
   i = {
     -- type template string
-		["<C-l>"] = { "<C-V><Tab>", desc = "Insert Tab" },
+    ["<C-l>"] = { "<C-V><Tab>", desc = "Insert Tab" },
   },
   v = {
     -- navigating wrapped lines
