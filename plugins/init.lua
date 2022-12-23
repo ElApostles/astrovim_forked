@@ -1,7 +1,6 @@
 return {
-  ["rcarriga/nvim-notify"] = {disable = true},
+  ["rcarriga/nvim-notify"] = { disable = true },
   { "42Paris/42header" },
-  ["goolord/alpha-nvim"] = { disable = true },
   ["max397574/better-escape.nvim"] = { disable = true },
 
   ["andymass/vim-matchup"] = { after = "nvim-treesitter" },
